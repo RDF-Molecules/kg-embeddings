@@ -7,7 +7,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pykeen
 
-%matplotlib inline
+#%matplotlib inline
 
 logging.basicConfig(level=logging.INFO)
 logging.getLogger('pykeen').setLevel(logging.INFO)
