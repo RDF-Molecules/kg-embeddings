@@ -18,12 +18,12 @@ print(pykeen.get_version())
 
 output_directory = os.path.join(
     os.path.expanduser('~'),
-    'Desktop',
+    'logs',
     'pykeen_test'
 )
 
 config = dict(
-    training_set_path           = '/Users/mehdi/PycharmProjects/PyKEEN/data/corpora_local/rdf.nt',
+    training_set_path           = '/data/dump0.nt',
     execution_mode              = 'Training_mode',
     random_seed                 = 0,
     kg_embedding_model_name     = 'TransE',
