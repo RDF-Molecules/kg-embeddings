@@ -16,17 +16,13 @@ print(sys.version)
 print(time.asctime())
 print(pykeen.get_version())
 
-output_directory = os.path.join(
-    os.path.expanduser('~'),
-    'logs',
-    'pykeen_test'
-)
+output_directory = '/home/diego/logs'
 
 config = dict(
-    training_set_path           = '/data/dump0.nt',
+    training_set_path           = './data/dump0.nt',
     execution_mode              = 'Training_mode',
     random_seed                 = 0,
-    kg_embedding_model_name     = 'TransE',
+    kg_embedding_model_name     = 'TransH',
     embedding_dim               = 50,
     scoring_function            = 2,  # corresponds to L2
     margin_loss                 = 0.05,
