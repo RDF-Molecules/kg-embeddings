@@ -16,7 +16,7 @@ print(sys.version)
 print(time.asctime())
 print(pykeen.get_version())
 
-output_directory = '/home/diego/logs'
+output_directory = './logs'
 
 config = dict(
     training_set_path           = './data/dump0.nt',
@@ -33,10 +33,12 @@ config = dict(
     preferred_device            = 'gpu'
 )
 
+print('Starting the training...')
 results = pykeen.run(
     config=config,
     output_directory=output_directory,
 )
+print('Training is finished')
 
 results.results.keys()
 
