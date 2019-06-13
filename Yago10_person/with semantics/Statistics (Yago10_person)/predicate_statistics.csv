@@ -1,0 +1,4 @@
+p	count
+rdf:type	12077
+http://www.w3.org/2002/07/owl#disjointWith	6
+http://www.w3.org/2000/01/rdf-schema#rdfs:subClassOf	2
